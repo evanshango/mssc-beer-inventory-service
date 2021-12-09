@@ -3,3 +3,9 @@ server:
 logging:
   level:
     com.codewithevans: debug
+spring:
+  application:
+    name: beer-inventory-service
+  cloud:
+    discovery:
+      enabled: false
