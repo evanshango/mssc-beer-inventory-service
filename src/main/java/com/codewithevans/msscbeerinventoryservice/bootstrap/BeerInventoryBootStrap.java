@@ -24,7 +24,7 @@ public class BeerInventoryBootStrap implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        if(beerInventoryRepository.count() == 0){
+        if (beerInventoryRepository.count() == 0) {
             loadInitialInv();
         }
     }
@@ -41,14 +41,14 @@ public class BeerInventoryBootStrap implements CommandLineRunner {
                 .builder()
                 .beerId(BEER_2_UUID)
                 .upc(BEER_2_UPC)
-                .quantityOnHand(50)
+                .quantityOnHand(70)
                 .build());
 
         beerInventoryRepository.saveAndFlush(BeerInventory
                 .builder()
                 .beerId(BEER_3_UUID)
                 .upc(BEER_3_UPC)
-                .quantityOnHand(50)
+                .quantityOnHand(80)
                 .build());
 
         log.debug("Loaded Inventory. Record count: " + beerInventoryRepository.count());
