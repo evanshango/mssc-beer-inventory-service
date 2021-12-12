@@ -5,13 +5,12 @@ import com.codewithevans.msscbeerinventoryservice.repositories.BeerInventoryRepo
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
 
 import java.util.UUID;
 
 @Slf4j
 @RequiredArgsConstructor
-@Component
+//@Component
 public class BeerInventoryBootStrap implements CommandLineRunner {
     public static final String BEER_1_UPC = "0631234200036";
     public static final String BEER_2_UPC = "0631234300019";
@@ -40,6 +39,8 @@ public class BeerInventoryBootStrap implements CommandLineRunner {
                 .upc(BEER_1_UPC)
                 .quantityOnHand(50)
                 .build());
+
+        System.out.println("BEER_2_UUID = " + BEER_2_UUID);
 
         beerInventoryRepository.save(BeerInventory
                 .builder()
