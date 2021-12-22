@@ -1,4 +1,4 @@
-package com.codewithevans.msscbeerinventoryservice.web.model;
+package com.codewithevans.brewery.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

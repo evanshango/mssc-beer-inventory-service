@@ -1,6 +1,6 @@
 package com.codewithevans.msscbeerinventoryservice.services;
 
-import com.codewithevans.common.events.NewInventoryEvent;
+import com.codewithevans.brewery.model.events.NewInventoryEvent;
 import com.codewithevans.msscbeerinventoryservice.config.JmsConfig;
 import com.codewithevans.msscbeerinventoryservice.domain.BeerInventory;
 import com.codewithevans.msscbeerinventoryservice.repositories.BeerInventoryRepository;
